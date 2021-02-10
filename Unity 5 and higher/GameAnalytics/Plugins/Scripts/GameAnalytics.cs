@@ -782,6 +782,7 @@ namespace GameAnalyticsSDK
 #if UNITY_EDITOR
 
         /// <summary>
+        /// DO NOT USE IT. GIVE SPECIFIC LOCATION! -ilter
         /// Dynamic search for a file.
         /// </summary>
         /// <returns>Returns the Unity path to a specified file.</returns>
@@ -809,7 +810,7 @@ namespace GameAnalyticsSDK
 
                 if(GameAnalytics.SettingsGA.Logo == null)
                 {
-                    GameAnalytics.SettingsGA.Logo = (Texture2D)AssetDatabase.LoadAssetAtPath(WhereIs("gaLogo.png"), typeof(Texture2D));
+                    GameAnalytics.SettingsGA.Logo = (Texture2D)AssetDatabase.LoadAssetAtPath("Packages/com.triflesgames.gameanalytics/Gizmos/GameAnalytics/gaLogo.png", typeof(Texture2D));
                 }
 
                 Graphics.DrawTexture(new Rect(GUILayoutUtility.GetLastRect().width - selectionRect.height - 5 - addX, selectionRect.y, selectionRect.height, selectionRect.height), GameAnalytics.SettingsGA.Logo);

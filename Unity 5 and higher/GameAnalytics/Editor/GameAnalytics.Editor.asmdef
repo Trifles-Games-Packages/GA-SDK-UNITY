@@ -1,0 +1,18 @@
+{
+    "name": "GameAnalytics.Editor",
+    "references": [
+        "GameAnalytics.Runtime",
+        "GameAnalytics.Playmaker.Editor"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
