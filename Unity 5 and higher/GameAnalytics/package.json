@@ -1,9 +1,0 @@
-{
-  "description": "GameAnalytics Unity SDK. Converted to Unity Package.",
-  "displayName": "GameAnalytics SDK",
-  "author": "Trifles Games",
-  "name": "com.triflesgames.gameanalytics",
-  "version": "6.3.13",
-  "type": "library",
-  "hideInEditor": false
-}
