@@ -1,6 +1,12 @@
 Changelog
 ---------
 <!--(CHANGELOG_TOP)-->
+**7.0.5**
+* updated hyperbid ilrd integration
+
+**7.0.4**
+* added ios part for aequus ilrd integration
+
 **7.0.3**
 * renamed ATT method name to avoid dupplicate symbols
 
