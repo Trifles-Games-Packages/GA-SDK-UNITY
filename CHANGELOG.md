@@ -1,6 +1,30 @@
 Changelog
 ---------
 <!--(CHANGELOG_TOP)-->
+**7.3.3**
+* playmaker fixes
+
+**7.3.2**
+* fixed missing custom event fields for when trying to fix missing session end events
+
+**7.3.1**
+* fixed editor ui bug with games with the same name
+
+**7.3.0**
+* added global custom event fields function to allow to add custom fields to events sent automatically by the SDK
+
+**7.2.1**
+* added functionality to force a new user in a/b testing without having to uninstall app first, simply use custom user id function to set a new user id which hasn't been used yet
+
+**7.2.0**
+* added support for admob impression events
+
+**7.1.1**
+* fixed build errors for desktop platforms
+
+**7.1.0**
+* added custom event fields feature
+
 **7.0.5**
 * updated hyperbid ilrd integration
 
