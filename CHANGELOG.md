@@ -1,6 +1,56 @@
 Changelog
 ---------
 <!--(CHANGELOG_TOP)-->
+**7.3.19**
+* updated dependencies
+
+**7.3.18**
+* fixed fps event script to still run coroutines when Time.timeScale = 0 by using WaitForSecondsRealtime instead of WaitForSeconds
+
+**7.3.17**
+* added method manually update gamekey and secretkey
+
+**7.3.16**
+* fixed uwp build errors
+
+**7.3.15**
+* changed frequency logic for fps events
+
+**7.3.14**
+* small fix
+
+**7.3.13**
+* fixed crash for android builds
+
+**7.3.12**
+* removed imei identifiers and other alternative identifiers from user identifier logic (android)
+
+**7.3.11**
+* updated dependency to external dependency resolver
+
+**7.3.10**
+* adding missing .meta file for upm release
+* switched to using openupm for scoped registry when using upm, please update the upm setup for the unity sdk
+
+**7.3.9**
+* fixed upm package.json
+
+**7.3.8**
+* fixed upm dependecy
+
+**7.3.7**
+* added dependencies.xml for upm release
+
+**7.3.6**
+* fixed playmaker bugs
+
+**7.3.5**
+* changed settings to have FPS events turned off by default
+
+**7.3.4**
+* added error events to be sent for invalid custom event fields used
+* added optional mergeFields argument to event methods to merge with global custom fields instead of overwrite them
+
 **7.3.3**
 * playmaker fixes
 
