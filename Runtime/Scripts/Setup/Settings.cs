@@ -53,7 +53,7 @@ namespace GameAnalyticsSDK.Setup
         /// The version of the GA Unity Wrapper plugin
         /// </summary>
         [HideInInspector]
-        public static string VERSION = "7.3.3";
+        public static string VERSION = "7.3.19";
 
         [HideInInspector]
         public static bool CheckingForUpdates = false;
@@ -132,7 +132,6 @@ namespace GameAnalyticsSDK.Setup
         public bool VerboseLogBuild = false;
         public bool UseManualSessionHandling = false;
         public bool SendExampleGameDataToMyGame = false;
-        public bool UseIMEI = false;
         //public bool UseBundleVersion = false;
 
         public bool InternetConnectivity;
@@ -185,8 +184,8 @@ namespace GameAnalyticsSDK.Setup
         public bool SubmitErrors = true;
         public bool NativeErrorReporting = false;
         public int MaxErrorCount = 10;
-        public bool SubmitFpsAverage = true;
-        public bool SubmitFpsCritical = true;
+        public bool SubmitFpsAverage = false;
+        public bool SubmitFpsCritical = false;
         public bool IncludeGooglePlay = true;
         public int FpsCriticalThreshold = 20;
         public int FpsCirticalSubmitInterval = 1;
@@ -363,6 +362,12 @@ namespace GameAnalyticsSDK.Setup
             }
 
             return valid;
+        }
+
+        public static void UpdateKeys(int index, string gameKey, string secretKey)
+        {
+            GameAnalytics.SettingsGA.gameKey[index] = gameKey;
+            GameAnalytics.SettingsGA.secretKey[index] = secretKey;
         }
 
         public void UpdateGameKey(int index, string value)
