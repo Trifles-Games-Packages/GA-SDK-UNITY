@@ -1,6 +1,21 @@
 Changelog
 ---------
 <!--(CHANGELOG_TOP)-->
+**7.3.24**
+* fixed fps script for when pausing game
+
+**7.3.23**
+* fixed bug with custom fields (locale related bug)
+
+**7.3.22**
+* added external dependency manager for .unitypackage release as well to solve issues with appset id on android
+
+**7.3.21**
+* fixed bug in internal error reporting
+
+**7.3.20**
+* added event uuid to events sent
+
 **7.3.19**
 * updated dependencies
 
